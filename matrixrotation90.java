@@ -9,8 +9,8 @@ public static void main(String args[])
 	int m,n;
 	m=s.nextInt();
 	n=s.nextInt();
-	int a[][]=new int[10][10];
-	int b[][]=new int[10][10];
+	int a[][]=new int[m][n];
+	int b[][]=new int[n][m];
 	int i,j;
 	for(i=0;i<m;i++)
 	{
@@ -27,11 +27,11 @@ public static void main(String args[])
 			
 		}
 	}
-	for(i=m-1;i>=0;i--)
+	for(i=n-1;i>=0;i--)
 	{
-		for(j=0;j<n;j++)
+		for(j=0;j<m;j++)
 		{
-			System.out.println(b[i][j]+" ");
+			System.out.println(b[i][j]+ " ");
 		}
 		System.out.println("\n");
 	}
